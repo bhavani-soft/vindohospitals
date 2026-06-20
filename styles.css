@@ -1261,621 +1261,6 @@ body.mobile-menu-open {
 }
 
 /* ==========================================================================
-   RESPONSIVE DESIGN BREAKPOINTS
-   ========================================================================== */
-
-/* ==================== TABLET (max-width: 1024px) ==================== */
-@media (max-width: 1024px) {
-    /* ---- Layout ---- */
-    .container {
-        padding: 0 1.5rem;
-    }
-
-    .section-padding {
-        padding: 5rem 0;
-    }
-
-    /* ---- Typography ---- */
-    .section-header h2 {
-        font-size: 2.25rem;
-    }
-
-    .hero-title {
-        font-size: 3rem !important;
-    }
-
-    /* ---- Navigation ---- */
-    .nav-links {
-        gap: 1.5rem;
-    }
-
-    .nav-links a {
-        font-size: 0.85rem;
-    }
-
-    .nav-emergency-btn {
-        font-size: 0.85rem;
-        padding: 0.65rem 1.25rem;
-    }
-
-    /* ---- Hero ---- */
-    .hero .container {
-        grid-template-columns: 1fr;
-        gap: 3rem;
-        text-align: center;
-    }
-
-    .hero-content {
-        max-width: 100%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .hero-content > span {
-        text-align: center;
-    }
-
-    .hero-content > p[style*="border-left"] {
-        text-align: left;
-    }
-
-    .hero-actions {
-        justify-content: center;
-    }
-
-    .hero-visual {
-        margin-top: 1rem;
-    }
-
-    .hero-card-container {
-        max-width: 420px;
-        margin: 0 auto;
-    }
-
-    .hero-main-card {
-        height: 360px;
-    }
-
-    .hero-floating-status {
-        right: 0 !important;
-    }
-
-    /* ---- Stats ---- */
-    .stats-grid {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 3rem 2rem;
-    }
-
-    .stat-item:nth-child(2)::after {
-        display: none;
-    }
-
-    .stat-number {
-        font-size: 2.75rem;
-    }
-
-    /* ---- Departments / Reviews Grid ---- */
-    .dept-grid {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 2rem;
-    }
-
-    /* ---- Doctors Grid ---- */
-    .doctors-grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-    /* ---- Instagram Grid ---- */
-    .instagram-grid {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 2rem;
-    }
-
-    /* ---- Facilities Grid ---- */
-    .facilities-grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-    /* ---- Booking Section ---- */
-    .booking .container {
-        grid-template-columns: 1fr;
-        gap: 3rem;
-    }
-
-    .booking-text h2 {
-        font-size: 2.25rem;
-    }
-
-    /* ---- About Section ---- */
-    .about .container {
-        grid-template-columns: 1fr;
-        gap: 3rem;
-    }
-
-    /* ---- Footer ---- */
-    .footer-grid {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 3rem;
-    }
-
-    .footer-grid-container {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 30px;
-    }
-}
-
-/* ==================== MOBILE (max-width: 768px) ==================== */
-@media (max-width: 768px) {
-    /* ---- Layout ---- */
-    .container {
-        padding: 0 1.25rem;
-    }
-
-    .section-padding {
-        padding: 3.5rem 0;
-    }
-
-    /* ---- Typography ---- */
-    .section-header {
-        margin: 0 auto 2.5rem auto;
-    }
-
-    .section-header h2 {
-        font-size: 1.85rem;
-        letter-spacing: -0.3px;
-    }
-
-    .section-header p {
-        font-size: 1rem;
-    }
-
-    /* ---- Navigation (mobile toggle) ---- */
-    .navbar {
-        height: auto;
-        min-height: 60px;
-    }
-
-    .navbar .container {
-        padding-top: 0.5rem;
-        padding-bottom: 0.5rem;
-    }
-
-    .nav-links {
-        display: none !important;
-    }
-
-    .mobile-menu-btn {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        width: 44px;
-        height: 44px;
-    }
-
-    .mobile-menu-btn svg {
-        width: 24px;
-        height: 24px;
-    }
-
-    .nav-actions .nav-emergency-btn {
-        display: none;
-    }
-
-    .logo span:first-child {
-        font-size: 20px !important;
-    }
-
-    /* ---- Hero ---- */
-    .hero {
-        min-height: auto;
-        padding-top: 80px;
-        padding-bottom: 3rem;
-    }
-
-    .hero .container {
-        gap: 2rem;
-    }
-
-    .hero-title {
-        font-size: 2.25rem !important;
-        letter-spacing: -1px;
-    }
-
-    .hero-description {
-        font-size: 1.05rem;
-        margin-bottom: 1.5rem;
-    }
-
-    .hero-content > p[style*="border-left"] {
-        font-size: 15px !important;
-        margin-bottom: 1.5rem !important;
-    }
-
-    .hero-actions {
-        flex-direction: column;
-        align-items: center;
-        gap: 0.75rem;
-        width: 100%;
-    }
-
-    .hero-actions .btn {
-        width: 100%;
-        max-width: 300px;
-        justify-content: center;
-    }
-
-    .hero-card-container {
-        max-width: 100%;
-    }
-
-    .hero-main-card {
-        height: 280px;
-    }
-
-    .hero-floating-status {
-        top: 1rem !important;
-        right: 0.5rem !important;
-        padding: 0.5rem 1rem;
-        font-size: 0.8rem;
-    }
-
-    /* ---- About Section ---- */
-    #about-details {
-        padding: 48px 0 !important;
-    }
-
-    .about-features-grid {
-        grid-template-columns: 1fr;
-        gap: 1.5rem;
-    }
-
-    .about-feature-card {
-        padding: 2rem 1.5rem;
-    }
-
-    /* ---- Instagram Section ---- */
-    #about-instagram {
-        padding: 0 0 48px 0 !important;
-    }
-
-    .instagram-grid {
-        grid-template-columns: 1fr;
-        gap: 1.5rem;
-    }
-
-    .instagram-card-content {
-        padding: 1.25rem;
-    }
-
-    /* ---- Services / Departments ---- */
-    #services {
-        padding: 48px 0 !important;
-    }
-
-    .dept-grid {
-        grid-template-columns: 1fr;
-        gap: 1.5rem;
-    }
-
-    .dept-card {
-        padding: 2rem 1.5rem;
-    }
-
-    /* ---- Facilities ---- */
-    #facilities {
-        padding: 48px 0 !important;
-    }
-
-    .facilities-grid {
-        grid-template-columns: 1fr;
-    }
-
-    .facility-card {
-        height: 220px;
-    }
-
-    /* ---- Booking ---- */
-    #booking {
-        padding: 48px 0 !important;
-    }
-
-    .booking .container {
-        gap: 2.5rem;
-    }
-
-    .booking-text h2 {
-        font-size: 1.85rem;
-    }
-
-    .booking-text p {
-        font-size: 1rem;
-        margin-bottom: 2rem;
-    }
-
-    .booking-card {
-        padding: 2rem !important;
-    }
-
-    .booking-card h3 {
-        font-size: 1.5rem;
-    }
-
-    .form-grid {
-        grid-template-columns: 1fr;
-    }
-
-    .form-group.full-width {
-        grid-column: span 1;
-    }
-
-    /* ---- Testimonials ---- */
-    #testimonials {
-        padding: 48px 0 !important;
-    }
-
-    /* ---- FAQs ---- */
-    #faq {
-        padding: 48px 0 !important;
-    }
-
-    .faq-header {
-        padding: 1.25rem;
-        font-size: 0.95rem;
-    }
-
-    .faq-content {
-        font-size: 0.9rem;
-    }
-
-    /* ---- Stats ---- */
-    .stats-grid {
-        grid-template-columns: 1fr;
-    }
-
-    .stat-item::after {
-        display: none !important;
-    }
-
-    .stat-number {
-        font-size: 2.5rem;
-    }
-
-    /* ---- Doctors ---- */
-    .doctors-grid {
-        grid-template-columns: 1fr;
-    }
-
-    /* ---- Footer ---- */
-    .footer-grid {
-        grid-template-columns: 1fr;
-    }
-
-    .footer-grid-container {
-        grid-template-columns: 1fr;
-        gap: 30px;
-    }
-
-    #contact {
-        padding: 40px 0 24px 0 !important;
-    }
-}
-
-/* ==================== SMALL MOBILE (max-width: 480px) ==================== */
-@media (max-width: 480px) {
-    /* ---- Layout ---- */
-    .container {
-        padding: 0 1rem;
-    }
-
-    .section-padding {
-        padding: 2.5rem 0;
-    }
-
-    /* ---- Typography ---- */
-    .section-header h2 {
-        font-size: 1.5rem;
-    }
-
-    .section-header p {
-        font-size: 0.9rem;
-    }
-
-    .hero-title {
-        font-size: 1.85rem !important;
-    }
-
-    .hero-description {
-        font-size: 0.95rem;
-    }
-
-    .hero-content > p[style*="border-left"] {
-        font-size: 14px !important;
-        padding-left: 12px !important;
-        margin-bottom: 1.25rem !important;
-    }
-
-    /* ---- Hero ---- */
-    .hero {
-        padding-top: 70px;
-    }
-
-    .hero-main-card {
-        height: 220px;
-    }
-
-    .hero-actions .btn {
-        padding: 0.75rem 1.5rem;
-        font-size: 0.9rem;
-    }
-
-    /* ---- Badge ---- */
-    .badge {
-        font-size: 0.75rem;
-        padding: 0.3rem 0.75rem;
-    }
-
-    /* ---- About ---- */
-    #about-details {
-        padding: 36px 0 !important;
-    }
-
-    .about-feature-card {
-        padding: 1.5rem 1.25rem;
-    }
-
-    .about-feature-card h3 {
-        font-size: 1.1rem;
-    }
-
-    .about-feature-card p {
-        font-size: 0.85rem;
-    }
-
-    /* ---- Instagram ---- */
-    #about-instagram {
-        padding: 0 0 36px 0 !important;
-    }
-
-    .instagram-header {
-        padding: 0.75rem 1rem;
-    }
-
-    .instagram-card-content {
-        padding: 1rem;
-    }
-
-    .instagram-caption {
-        font-size: 0.85rem;
-    }
-
-    /* ---- Departments ---- */
-    #services {
-        padding: 36px 0 !important;
-    }
-
-    .dept-card {
-        padding: 1.75rem 1.25rem;
-    }
-
-    .dept-card h3 {
-        font-size: 1.2rem;
-    }
-
-    /* ---- Facilities ---- */
-    #facilities {
-        padding: 36px 0 !important;
-    }
-
-    .facility-card {
-        height: 200px;
-    }
-
-    .facility-overlay {
-        padding: 1.25rem;
-    }
-
-    .facility-overlay h3 {
-        font-size: 1.1rem;
-    }
-
-    /* ---- Booking ---- */
-    #booking {
-        padding: 36px 0 !important;
-    }
-
-    .booking-text h2 {
-        font-size: 1.5rem;
-    }
-
-    .booking-card {
-        padding: 1.5rem !important;
-    }
-
-    .booking-card h3 {
-        font-size: 1.3rem;
-        margin-bottom: 1.5rem;
-    }
-
-    .form-control {
-        padding: 0.8rem 1rem;
-        font-size: 0.9rem;
-    }
-
-    .feature-item {
-        gap: 1rem;
-    }
-
-    .feature-item h4 {
-        font-size: 1rem;
-    }
-
-    .feature-item p {
-        font-size: 0.85rem;
-    }
-
-    /* ---- Testimonials ---- */
-    #testimonials {
-        padding: 36px 0 !important;
-    }
-
-    #testimonials h2 {
-        font-size: 1.5rem !important;
-    }
-
-    /* ---- FAQs ---- */
-    #faq {
-        padding: 36px 0 !important;
-    }
-
-    .faq-header {
-        padding: 1rem;
-        font-size: 0.9rem;
-    }
-
-    .faq-header span {
-        flex: 1;
-        padding-right: 0.5rem;
-    }
-
-    .faq-content p {
-        font-size: 0.85rem;
-    }
-
-    /* ---- Footer ---- */
-    #contact {
-        padding: 32px 0 20px 0 !important;
-    }
-
-    #contact h3 {
-        font-size: 18px !important;
-    }
-
-    #contact h4 {
-        font-size: 16px !important;
-    }
-}
-
-/* ==================== PRINT STYLES ==================== */
-@media print {
-    .navbar, .mobile-nav-overlay, .hero-canvas, .theme-toggle, .mobile-menu-btn {
-        display: none !important;
-    }
-
-    .hero {
-        min-height: auto;
-        padding-top: 0;
-    }
-
-    body {
-        font-size: 12pt;
-        color: #000;
-        background: #fff;
-    }
-}
-
-
-/* ==========================================================================
    ABOUT SECTION
    ========================================================================== */
 .about {
@@ -2225,5 +1610,620 @@ body.mobile-menu-open {
     color: var(--text-secondary);
     text-transform: uppercase;
     letter-spacing: 0.5px;
+}
+
+
+/* ==========================================================================
+   RESPONSIVE DESIGN BREAKPOINTS
+   ========================================================================== */
+
+/* ==================== TABLET (max-width: 1024px) ==================== */
+@media (max-width: 1024px) {
+    /* ---- Layout ---- */
+    .container {
+        padding: 0 1.5rem;
+    }
+
+    .section-padding {
+        padding: 5rem 0;
+    }
+
+    /* ---- Typography ---- */
+    .section-header h2 {
+        font-size: 2.25rem;
+    }
+
+    .hero-title {
+        font-size: 3rem !important;
+    }
+
+    /* ---- Navigation ---- */
+    .nav-links {
+        gap: 1.5rem;
+    }
+
+    .nav-links a {
+        font-size: 0.85rem;
+    }
+
+    .nav-emergency-btn {
+        font-size: 0.85rem;
+        padding: 0.65rem 1.25rem;
+    }
+
+    /* ---- Hero ---- */
+    .hero .container {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+        text-align: center;
+    }
+
+    .hero-content {
+        max-width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hero-content > span {
+        text-align: center;
+    }
+
+    .hero-content > p[style*="border-left"] {
+        text-align: left;
+    }
+
+    .hero-actions {
+        justify-content: center;
+    }
+
+    .hero-visual {
+        margin-top: 1rem;
+    }
+
+    .hero-card-container {
+        max-width: 420px;
+        margin: 0 auto;
+    }
+
+    .hero-main-card {
+        height: 360px;
+    }
+
+    .hero-floating-status {
+        right: 0 !important;
+    }
+
+    /* ---- Stats ---- */
+    .stats-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 3rem 2rem;
+    }
+
+    .stat-item:nth-child(2)::after {
+        display: none;
+    }
+
+    .stat-number {
+        font-size: 2.75rem;
+    }
+
+    /* ---- Departments / Reviews Grid ---- */
+    .dept-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+    }
+
+    /* ---- Doctors Grid ---- */
+    .doctors-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* ---- Instagram Grid ---- */
+    .instagram-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+    }
+
+    /* ---- Facilities Grid ---- */
+    .facilities-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* ---- Booking Section ---- */
+    .booking .container {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+    }
+
+    .booking-text h2 {
+        font-size: 2.25rem;
+    }
+
+    /* ---- About Section ---- */
+    .about .container {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+    }
+
+    /* ---- Footer ---- */
+    .footer-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 3rem;
+    }
+
+    .footer-grid-container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+    }
+}
+
+/* ==================== MOBILE (max-width: 768px) ==================== */
+@media (max-width: 768px) {
+    /* ---- Layout ---- */
+    .container {
+        padding: 0 1.25rem;
+    }
+
+    .section-padding {
+        padding: 3.5rem 0;
+    }
+
+    /* ---- Typography ---- */
+    .section-header {
+        margin: 0 auto 2.5rem auto;
+    }
+
+    .section-header h2 {
+        font-size: 1.85rem;
+        letter-spacing: -0.3px;
+    }
+
+    .section-header p {
+        font-size: 1rem;
+    }
+
+    /* ---- Navigation (mobile toggle) ---- */
+    .navbar {
+        height: auto;
+        min-height: 60px;
+    }
+
+    .navbar .container {
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
+    }
+
+    .nav-links {
+        display: none !important;
+    }
+
+    .mobile-menu-btn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 44px;
+        height: 44px;
+    }
+
+    .mobile-menu-btn svg {
+        width: 24px;
+        height: 24px;
+    }
+
+    .nav-actions .nav-emergency-btn {
+        display: none;
+    }
+
+    .logo span:first-child {
+        font-size: 20px !important;
+    }
+
+    /* ---- Hero ---- */
+    .hero {
+        min-height: auto;
+        padding-top: 95px;
+        padding-bottom: 3rem;
+    }
+
+    .hero .container {
+        gap: 2rem;
+    }
+
+    .hero-title {
+        font-size: 2.25rem !important;
+        letter-spacing: -1px;
+    }
+
+    .hero-description {
+        font-size: 1.05rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .hero-content > p[style*="border-left"] {
+        font-size: 15px !important;
+        margin-bottom: 1.5rem !important;
+    }
+
+    .hero-actions {
+        flex-direction: column;
+        align-items: center;
+        gap: 0.75rem;
+        width: 100%;
+    }
+
+    .hero-actions .btn {
+        width: 100%;
+        max-width: 300px;
+        justify-content: center;
+    }
+
+    .hero-card-container {
+        max-width: 100%;
+    }
+
+    .hero-main-card {
+        height: 280px;
+    }
+
+    .hero-floating-status {
+        top: 1rem !important;
+        right: 0.5rem !important;
+        padding: 0.5rem 1rem;
+        font-size: 0.8rem;
+    }
+
+    /* ---- About Section ---- */
+    #about-details {
+        padding: 48px 0 !important;
+    }
+
+    .about-features-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .about-feature-card {
+        padding: 2rem 1.5rem;
+    }
+
+    /* ---- Instagram Section ---- */
+    #about-instagram {
+        padding: 0 0 48px 0 !important;
+    }
+
+    .instagram-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .instagram-card-content {
+        padding: 1.25rem;
+    }
+
+    /* ---- Services / Departments ---- */
+    #services {
+        padding: 48px 0 !important;
+    }
+
+    .dept-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .dept-card {
+        padding: 2rem 1.5rem;
+    }
+
+    /* ---- Facilities ---- */
+    #facilities {
+        padding: 48px 0 !important;
+    }
+
+    .facilities-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .facility-card {
+        height: 220px;
+    }
+
+    /* ---- Booking ---- */
+    #booking {
+        padding: 48px 0 !important;
+    }
+
+    .booking .container {
+        gap: 2.5rem;
+    }
+
+    .booking-text h2 {
+        font-size: 1.85rem;
+    }
+
+    .booking-text p {
+        font-size: 1rem;
+        margin-bottom: 2rem;
+    }
+
+    .booking-card {
+        padding: 2rem !important;
+    }
+
+    .booking-card h3 {
+        font-size: 1.5rem;
+    }
+
+    .form-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .form-group.full-width {
+        grid-column: span 1;
+    }
+
+    /* ---- Testimonials ---- */
+    #testimonials {
+        padding: 48px 0 !important;
+    }
+
+    /* ---- FAQs ---- */
+    #faq {
+        padding: 48px 0 !important;
+    }
+
+    .faq-header {
+        padding: 1.25rem;
+        font-size: 0.95rem;
+    }
+
+    .faq-content {
+        font-size: 0.9rem;
+    }
+
+    /* ---- Stats ---- */
+    .stats-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .stat-item::after {
+        display: none !important;
+    }
+
+    .stat-number {
+        font-size: 2.5rem;
+    }
+
+    /* ---- Doctors ---- */
+    .doctors-grid {
+        grid-template-columns: 1fr;
+    }
+
+    /* ---- Footer ---- */
+    .footer-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .footer-grid-container {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    #contact {
+        padding: 40px 0 24px 0 !important;
+    }
+}
+
+/* ==================== SMALL MOBILE (max-width: 480px) ==================== */
+@media (max-width: 480px) {
+    /* ---- Layout ---- */
+    .container {
+        padding: 0 1rem;
+    }
+
+    .section-padding {
+        padding: 2.5rem 0;
+    }
+
+    /* ---- Typography ---- */
+    .section-header h2 {
+        font-size: 1.5rem;
+    }
+
+    .section-header p {
+        font-size: 0.9rem;
+    }
+
+    .hero-title {
+        font-size: 1.85rem !important;
+    }
+
+    .hero-description {
+        font-size: 0.95rem;
+    }
+
+    .hero-content > p[style*="border-left"] {
+        font-size: 14px !important;
+        padding-left: 12px !important;
+        margin-bottom: 1.25rem !important;
+    }
+
+    /* ---- Hero ---- */
+    .hero {
+        padding-top: 95px;
+    }
+
+    .hero-main-card {
+        height: 220px;
+    }
+
+    .hero-actions .btn {
+        padding: 0.75rem 1.5rem;
+        font-size: 0.9rem;
+    }
+
+    /* ---- Badge ---- */
+    .badge {
+        font-size: 0.75rem;
+        padding: 0.3rem 0.75rem;
+    }
+
+    /* ---- About ---- */
+    #about-details {
+        padding: 36px 0 !important;
+    }
+
+    .about-feature-card {
+        padding: 1.5rem 1.25rem;
+    }
+
+    .about-feature-card h3 {
+        font-size: 1.1rem;
+    }
+
+    .about-feature-card p {
+        font-size: 0.85rem;
+    }
+
+    /* ---- Instagram ---- */
+    #about-instagram {
+        padding: 0 0 36px 0 !important;
+    }
+
+    .instagram-header {
+        padding: 0.75rem 1rem;
+    }
+
+    .instagram-card-content {
+        padding: 1rem;
+    }
+
+    .instagram-caption {
+        font-size: 0.85rem;
+    }
+
+    /* ---- Departments ---- */
+    #services {
+        padding: 36px 0 !important;
+    }
+
+    .dept-card {
+        padding: 1.75rem 1.25rem;
+    }
+
+    .dept-card h3 {
+        font-size: 1.2rem;
+    }
+
+    /* ---- Facilities ---- */
+    #facilities {
+        padding: 36px 0 !important;
+    }
+
+    .facility-card {
+        height: 200px;
+    }
+
+    .facility-overlay {
+        padding: 1.25rem;
+    }
+
+    .facility-overlay h3 {
+        font-size: 1.1rem;
+    }
+
+    /* ---- Booking ---- */
+    #booking {
+        padding: 36px 0 !important;
+    }
+
+    .booking-text h2 {
+        font-size: 1.5rem;
+    }
+
+    .booking-card {
+        padding: 1.5rem !important;
+    }
+
+    .booking-card h3 {
+        font-size: 1.3rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .form-control {
+        padding: 0.8rem 1rem;
+        font-size: 0.9rem;
+    }
+
+    .feature-item {
+        gap: 1rem;
+    }
+
+    .feature-item h4 {
+        font-size: 1rem;
+    }
+
+    .feature-item p {
+        font-size: 0.85rem;
+    }
+
+    /* ---- Testimonials ---- */
+    #testimonials {
+        padding: 36px 0 !important;
+    }
+
+    #testimonials h2 {
+        font-size: 1.5rem !important;
+    }
+
+    /* ---- FAQs ---- */
+    #faq {
+        padding: 36px 0 !important;
+    }
+
+    .faq-header {
+        padding: 1rem;
+        font-size: 0.9rem;
+    }
+
+    .faq-header span {
+        flex: 1;
+        padding-right: 0.5rem;
+    }
+
+    .faq-content p {
+        font-size: 0.85rem;
+    }
+
+    /* ---- Footer ---- */
+    #contact {
+        padding: 32px 0 20px 0 !important;
+    }
+
+    #contact h3 {
+        font-size: 18px !important;
+    }
+
+    #contact h4 {
+        font-size: 16px !important;
+    }
+}
+
+/* ==================== PRINT STYLES ==================== */
+@media print {
+    .navbar, .mobile-nav-overlay, .hero-canvas, .theme-toggle, .mobile-menu-btn {
+        display: none !important;
+    }
+
+    .hero {
+        min-height: auto;
+        padding-top: 0;
+    }
+
+    body {
+        font-size: 12pt;
+        color: #000;
+        background: #fff;
+    }
 }
 
