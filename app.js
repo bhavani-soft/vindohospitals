@@ -392,5 +392,74 @@ document.addEventListener('DOMContentLoaded', () => {
                 });
             });
         }
+    // ----------------------------------------------------------------------
+    // 6. Mobile Navigation Menu
+    // ----------------------------------------------------------------------
+    const mobileMenuToggle = document.getElementById('mobile-menu-toggle');
+    const mobileMenuClose = document.getElementById('mobile-menu-close');
+    const mobileNavOverlay = document.getElementById('mobile-nav-overlay');
+    const mobileNavLinks = document.querySelectorAll('.mobile-nav-links a');
+
+    const openMobileMenu = () => {
+        if (mobileNavOverlay) {
+            mobileNavOverlay.classList.add('active');
+            document.body.classList.add('mobile-menu-open');
+            // Re-initialize Lucide icons for the mobile menu overlay
+            if (typeof lucide !== 'undefined') {
+                lucide.createIcons();
+            }
+        }
+    };
+
+    const closeMobileMenu = () => {
+        if (mobileNavOverlay) {
+            mobileNavOverlay.classList.remove('active');
+            document.body.classList.remove('mobile-menu-open');
+        }
+    };
+
+    if (mobileMenuToggle) {
+        mobileMenuToggle.addEventListener('click', openMobileMenu);
+    }
+
+    if (mobileMenuClose) {
+        mobileMenuClose.addEventListener('click', closeMobileMenu);
+    }
+
+    // Close on clicking a navigation link (auto-scroll)
+    mobileNavLinks.forEach(link => {
+        link.addEventListener('click', () => {
+            closeMobileMenu();
+        });
+    });
+
+    // Close on clicking the backdrop (outside the panel)
+    if (mobileNavOverlay) {
+        mobileNavOverlay.addEventListener('click', (e) => {
+            // Only close if clicking the backdrop (not the panel itself)
+            if (e.target === mobileNavOverlay || e.target === mobileNavOverlay.querySelector('::before')) {
+                closeMobileMenu();
+            }
+        });
+
+        // More robust: close if click is NOT inside the panel
+        mobileNavOverlay.addEventListener('mousedown', (e) => {
+            const panel = mobileNavOverlay.querySelector('.mobile-nav-panel');
+            if (panel && !panel.contains(e.target)) {
+                closeMobileMenu();
+            }
+        });
+    }
+
+    // Close on Escape key
+    document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape' && mobileNavOverlay && mobileNavOverlay.classList.contains('active')) {
+            closeMobileMenu();
+        }
+    });
+
+    // Disable Lenis smooth scroll on touch devices for better performance
+    if (lenis && 'ontouchstart' in window) {
+        lenis.destroy();
     }
 });

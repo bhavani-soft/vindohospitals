@@ -27,7 +27,7 @@
                 <span style="color: var(--hospital-orange); font-size: 14px; font-weight: 600; display: block; line-height: 1.1; text-align: left;">Multispeciality<br>Hospital</span>
             </a>
             
-            <nav class="nav-links" style="display: flex; gap: 20px; align-items: center;">
+            <nav class="nav-links">
                 <a href="#about" class="active">About</a>
                 <a href="#services">Departments</a>
                 <a href="#facilities">Facilities</a>
@@ -42,12 +42,45 @@
                     <i data-lucide="sun" class="sun-icon"></i>
                     <i data-lucide="moon" class="moon-icon"></i>
                 </button>
-                <a href="#contact" class="btn btn-primary" style="background-color: var(--hospital-orange); color: #FFFFFF; font-weight: bold; border-radius: 6px;">
+                <a href="#contact" class="btn btn-primary nav-emergency-btn">
                     Emergency: 24/7 Open
                 </a>
+                <!-- Mobile Hamburger Toggle -->
+                <button id="mobile-menu-toggle" class="mobile-menu-btn" aria-label="Open Navigation Menu">
+                    <i data-lucide="menu"></i>
+                </button>
             </div>
         </div>
     </header>
+
+    <!-- Mobile Navigation Overlay -->
+    <div id="mobile-nav-overlay" class="mobile-nav-overlay">
+        <div class="mobile-nav-panel">
+            <div class="mobile-nav-header">
+                <a href="#about" class="logo">
+                    <span class="text-brand-blue" style="font-size: 24px; font-weight: 800;">VINOD</span>
+                    <span style="color: var(--hospital-orange); font-size: 14px; font-weight: 600;">Multispeciality<br>Hospital</span>
+                </a>
+                <button id="mobile-menu-close" class="mobile-menu-close" aria-label="Close Navigation Menu">
+                    <i data-lucide="x"></i>
+                </button>
+            </div>
+            <nav class="mobile-nav-links">
+                <a href="#about">About</a>
+                <a href="#services">Departments</a>
+                <a href="#facilities">Facilities</a>
+                <a href="#booking">Book Visit</a>
+                <a href="#testimonials">Reviews</a>
+                <a href="#faq">FAQs</a>
+            </nav>
+            <div class="mobile-nav-footer">
+                <a href="#contact" class="btn btn-primary nav-emergency-btn">
+                    <i data-lucide="phone"></i> Emergency: 24/7 Open
+                </a>
+                <p style="font-size: 0.8rem; color: var(--text-secondary); margin-top: 1.5rem;">Vinod Multi Speciality Hospital, Sangareddy</p>
+            </div>
+        </div>
+    </div>
 
     <!-- ==========================================
          MAIN CONTENT SECTION
@@ -55,22 +88,22 @@
     <main>
         
         <!-- Section B: Hero / Trust Banner -->
-        <section id="about" class="hero" style="min-height: 90vh; padding: 100px 0;">
+        <section id="about" class="hero">
             <!-- Particle Background Canvas -->
             <canvas id="hero-canvas" class="hero-canvas"></canvas>
             
-            <div class="container" style="display: grid; grid-template-columns: 1.1fr 0.9fr; gap: 40px; align-items: center; position: relative; z-index: 2;">
-                <div class="hero-content" style="text-align: left;">
+            <div class="container">
+                <div class="hero-content">
                     <span style="color: var(--hospital-orange); font-weight: bold; text-transform: uppercase; letter-spacing: 1px; display: block; margin-bottom: 10px;">Trusted Healthcare in Sangareddy</span>
-                    <h1 class="text-brand-blue hero-title" style="font-size: 42px; margin: 10px 0 20px; font-weight: 800; line-height: 1.2;">Vinod Multi Speciality Hospital</h1>
-                    <p class="hero-description" style="font-size: 18px; line-height: 1.6; color: var(--text-secondary); margin-bottom: 25px;">
+                    <h1 class="text-brand-blue hero-title">Vinod Multi Speciality Hospital</h1>
+                    <p class="hero-description">
                         Led by <strong>Dr. Vinod Kumar Kandala (MD, General Medicine – Gold Medalist)</strong>, our hospital is one of the premier healthcare facilities in Sangareddy. We combine expert medical consultation with modern diagnostics to keep your family healthy.
                     </p>
                     <p style="font-style: italic; color: var(--text-primary); border-left: 4px solid var(--hospital-blue); padding-left: 15px; margin-bottom: 30px; font-size: 18px; font-family: 'Outfit'; font-weight: 500;">
                         "Committed to Cure"
                     </p>
-                    <div class="hero-actions" style="display: flex; gap: 1rem;">
-                        <a href="#booking" class="btn btn-primary" style="background-color: var(--hospital-orange); color: #FFFFFF; font-weight: bold; border-radius: 6px;">
+                    <div class="hero-actions">
+                        <a href="#booking" class="btn btn-primary nav-emergency-btn">
                             Book Appointment
                         </a>
                         <a href="#contact" class="btn btn-secondary">
@@ -80,9 +113,9 @@
                 </div>
                 
                 <div class="hero-visual">
-                    <div class="hero-card-container" style="max-width: 100%; width: 100%;">
+                    <div class="hero-card-container">
                         <!-- High Quality Aesthetic Lobby / Clinical Scene -->
-                        <div class="hero-main-card" style="background-image: url('https://images.unsplash.com/photo-1586773860418-d3b3de97e663?auto=format&fit=crop&q=80&w=800'); height: 380px;"></div>
+                        <div class="hero-main-card" style="background-image: url('https://images.unsplash.com/photo-1586773860418-d3b3de97e663?auto=format&fit=crop&q=80&w=800');"></div>
                         
                         <!-- Floating status indicators -->
                         <div class="hero-floating-status glass" style="top: 2rem; right: -1rem;">
@@ -337,7 +370,7 @@
 
         <!-- Interactive Appointment Booking Form -->
         <section id="booking" class="booking section-padding" style="padding: 80px 0;">
-            <div class="container" style="display: grid; grid-template-columns: 0.95fr 1.05fr; gap: 50px; align-items: center;">
+            <div class="container">
                 <div class="booking-text">
                     <span class="badge">Direct Booking</span>
                     <h2>Schedule An Appointment</h2>
@@ -440,7 +473,7 @@
                             </div>
                         </div>
                         
-                        <button type="submit" class="btn btn-primary" style="width: 100%; background: var(--hospital-orange); color: #FFFFFF; font-weight: bold; border-radius: 6px; border: none; cursor: pointer; margin-top: 1rem;">
+                        <button type="submit" class="btn btn-primary nav-emergency-btn" style="width: 100%; border: none; cursor: pointer; margin-top: 1rem;">
                             <span>Submit Booking Request</span>
                             <i data-lucide="check"></i>
                         </button>
@@ -553,7 +586,7 @@
          Section E: Footer & Contact
          ========================================== -->
     <footer id="contact" class="bg-brand-blue" style="color: #FFFFFF; padding: 60px 0 30px 0; background-color: var(--hospital-blue); position: relative; z-index: 2;">
-        <div class="container" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 40px;">
+        <div class="container footer-grid-container">
             <div>
                 <h3 style="font-size: 22px; margin-bottom: 15px; font-family: 'Outfit';">Vinod Multi Speciality Hospital</h3>
                 <p style="opacity: 0.8; font-size: 14px; line-height: 1.6; color: #f8fafc;">Providing trusted healthcare with expert doctors, 24/7 support, and modern critical care units in Sangareddi.</p>
