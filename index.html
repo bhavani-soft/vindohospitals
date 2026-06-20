@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Experience state-of-the-art healthcare at Vinod Multi Speciality Hospital, Sangareddi. Led by Dr. Vinod Kumar Kandala, Gold Medalist MD in General Medicine. Open 24/7.">
+    <title>Vinod Multi Speciality Hospital | Sangareddi, Telangana</title>
+    
+    <!-- Custom Style Sheet -->
+    <link rel="stylesheet" href="styles.css">
+    
+    <style>
+        .text-brand-blue { color: var(--hospital-blue) !important; }
+        .bg-brand-blue { background-color: var(--hospital-blue) !important; }
+        .bg-light-gray { background-color: var(--bg-light) !important; }
+    </style>
+</head>
+<body>
+
+    <!-- ==========================================
+         Section A: Navigation Bar
+         ========================================== -->
+    <header class="navbar" style="border-bottom: 3px solid var(--hospital-blue); height: auto; padding: 10px 0;">
+        <div class="container" style="display: flex; justify-content: space-between; align-items: center; width: 100%;">
+            <a href="#about" class="logo" style="display: flex; align-items: center; gap: 10px;">
+                <span class="text-brand-blue" style="font-size: 24px; font-weight: 800; letter-spacing: -0.5px;">VINOD</span>
+                <span style="color: var(--hospital-orange); font-size: 14px; font-weight: 600; display: block; line-height: 1.1; text-align: left;">Multispeciality<br>Hospital</span>
+            </a>
+            
+            <nav class="nav-links" style="display: flex; gap: 20px; align-items: center;">
+                <a href="#about" class="active">About</a>
+                <a href="#services">Departments</a>
+                <a href="#facilities">Facilities</a>
+                <a href="#booking">Book Visit</a>
+                <a href="#testimonials">Reviews</a>
+                <a href="#faq">FAQs</a>
+            </nav>
+            
+            <div class="nav-actions">
+                <!-- Theme Switcher -->
+                <button id="theme-toggle" class="theme-toggle" aria-label="Toggle Dark/Light Mode">
+                    <i data-lucide="sun" class="sun-icon"></i>
+                    <i data-lucide="moon" class="moon-icon"></i>
+                </button>
+                <a href="#contact" class="btn btn-primary" style="background-color: var(--hospital-orange); color: #FFFFFF; font-weight: bold; border-radius: 6px;">
+                    Emergency: 24/7 Open
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- ==========================================
+         MAIN CONTENT SECTION
+         ========================================== -->
+    <main>
+        
+        <!-- Section B: Hero / Trust Banner -->
+        <section id="about" class="hero" style="min-height: 90vh; padding: 100px 0;">
+            <!-- Particle Background Canvas -->
+            <canvas id="hero-canvas" class="hero-canvas"></canvas>
+            
+            <div class="container" style="display: grid; grid-template-columns: 1.1fr 0.9fr; gap: 40px; align-items: center; position: relative; z-index: 2;">
+                <div class="hero-content" style="text-align: left;">
+                    <span style="color: var(--hospital-orange); font-weight: bold; text-transform: uppercase; letter-spacing: 1px; display: block; margin-bottom: 10px;">Trusted Healthcare in Sangareddy</span>
+                    <h1 class="text-brand-blue hero-title" style="font-size: 42px; margin: 10px 0 20px; font-weight: 800; line-height: 1.2;">Vinod Multi Speciality Hospital</h1>
+                    <p class="hero-description" style="font-size: 18px; line-height: 1.6; color: var(--text-secondary); margin-bottom: 25px;">
+                        Led by <strong>Dr. Vinod Kumar Kandala (MD, General Medicine – Gold Medalist)</strong>, our hospital is one of the premier healthcare facilities in Sangareddy. We combine expert medical consultation with modern diagnostics to keep your family healthy.
+                    </p>
+                    <p style="font-style: italic; color: var(--text-primary); border-left: 4px solid var(--hospital-blue); padding-left: 15px; margin-bottom: 30px; font-size: 18px; font-family: 'Outfit'; font-weight: 500;">
+                        "Committed to Cure"
+                    </p>
+                    <div class="hero-actions" style="display: flex; gap: 1rem;">
+                        <a href="#booking" class="btn btn-primary" style="background-color: var(--hospital-orange); color: #FFFFFF; font-weight: bold; border-radius: 6px;">
+                            Book Appointment
+                        </a>
+                        <a href="#contact" class="btn btn-secondary">
+                            Find Our Location
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="hero-visual">
+                    <div class="hero-card-container" style="max-width: 100%; width: 100%;">
+                        <!-- High Quality Aesthetic Lobby / Clinical Scene -->
+                        <div class="hero-main-card" style="background-image: url('https://images.unsplash.com/photo-1586773860418-d3b3de97e663?auto=format&fit=crop&q=80&w=800'); height: 380px;"></div>
+                        
+                        <!-- Floating status indicators -->
+                        <div class="hero-floating-status glass" style="top: 2rem; right: -1rem;">
+                            <span class="status-dot"></span>
+                            <span class="status-text">Open 24 Hours</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Detailed About Us Section -->
+        <section id="about-details" class="about section-padding" style="background: var(--bg-secondary); padding: 80px 0;">
+            <div class="container">
+                <div class="about-content">
+                    <span class="badge">Healthcare Leadership</span>
+                    <h2>A Legacy of Clinical Integrity</h2>
+                    <p style="color: var(--text-secondary); margin-bottom: 2rem;">
+                        At Vinod Multi Speciality Hospital, we believe in patient-first treatments. Under the medical guidance of Dr. Vinod Kumar Kandala, we bring elite medical experience and diagnostic technology directly to patients in Sangareddy, Telangana.
+                    </p>
+                    <div style="display: flex; flex-direction: column; gap: 1rem;">
+                        <div style="display: flex; align-items: center; gap: 0.75rem;">
+                            <i data-lucide="check-circle" style="color: var(--hospital-orange);"></i>
+                            <span style="font-weight: 600;">150+ Bed Multi Speciality Infrastructure</span>
+                        </div>
+                        <div style="display: flex; align-items: center; gap: 0.75rem;">
+                            <i data-lucide="check-circle" style="color: var(--hospital-orange);"></i>
+                            <span style="font-weight: 600;">Gold Medalist MD General Medicine consultant</span>
+                        </div>
+                        <div style="display: flex; align-items: center; gap: 0.75rem;">
+                            <i data-lucide="check-circle" style="color: var(--hospital-orange);"></i>
+                            <span style="font-weight: 600;">24/7 Critical Trauma and ICU Admissions</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="about-features-grid">
+                    <!-- Feature 1 -->
+                    <div class="about-feature-card glass" style="background: var(--bg-primary);">
+                        <div class="about-feature-icon">
+                            <i data-lucide="building"></i>
+                        </div>
+                        <h3>Modern Facilities</h3>
+                        <p>State-of-the-art diagnostic testing, fully monitored operations, and specialty care departments.</p>
+                    </div>
+                    
+                    <!-- Feature 2 -->
+                    <div class="about-feature-card glass" style="background: var(--bg-primary);">
+                        <div class="about-feature-icon">
+                            <i data-lucide="shield-check"></i>
+                        </div>
+                        <h3>Patient-Centric Care</h3>
+                        <p>Compassionate care with preventive checks, emergency response, and clinical assistance.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Instagram Updates Section -->
+        <section id="about-instagram" class="instagram-feed" style="background: var(--bg-secondary); padding: 0 0 80px 0;">
+            <div class="container" style="border-top: 1px solid var(--border-color); padding-top: 5rem;">
+                <div class="section-header" style="margin-bottom: 3.5rem; text-align: center;">
+                    <span class="badge" style="background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); color: #ffffff; border: none; display: inline-flex; align-items: center; gap: 0.5rem; text-transform: none;">
+                        <i data-lucide="instagram" style="width: 16px; height: 16px;"></i> @vinodhospitals
+                    </span>
+                    <h2>Hospital Updates & Health Awareness</h2>
+                    <p style="max-width: 600px; margin: 0 auto; color: var(--text-secondary);">Stay connected with Vinod Multi Speciality Hospital for community health camps, clinical updates, and medical tips directly from Sangareddy.</p>
+                </div>
+                
+                <div class="instagram-grid">
+                    <!-- Post 1 -->
+                    <div class="instagram-card glass">
+                        <div class="instagram-header">
+                            <div class="instagram-avatar">V</div>
+                            <div class="instagram-user-info">
+                                <span class="instagram-username">vinodhospitals</span>
+                                <span class="instagram-location">Sangareddy, India</span>
+                            </div>
+                            <a href="https://www.instagram.com/vinodhospitals/?hl=en" target="_blank" class="instagram-link-icon" aria-label="View on Instagram"><i data-lucide="instagram"></i></a>
+                        </div>
+                        <div class="instagram-img-container">
+                            <img src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?auto=format&fit=crop&q=80&w=600" alt="Community Health Camp organized by Vinod Multi Speciality Hospital">
+                            <div class="instagram-card-overlay">
+                                <span class="instagram-stat"><i data-lucide="heart"></i> 142</span>
+                                <span class="instagram-stat"><i data-lucide="message-circle"></i> 18</span>
+                            </div>
+                        </div>
+                        <div class="instagram-card-content">
+                            <p class="instagram-caption">
+                                <strong>vinodhospitals</strong> 🏥 Free Health Camp organized by Vinod Multi Speciality Hospital. Over 200+ citizens received free clinical diagnostics and doctor consultations in Sangareddy. 🏥💙 #HealthCamp #CommunityFirst #Sangareddy
+                            </p>
+                            <span class="instagram-date">2 days ago</span>
+                        </div>
+                    </div>
+                    
+                    <!-- Post 2 -->
+                    <div class="instagram-card glass">
+                        <div class="instagram-header">
+                            <div class="instagram-avatar">V</div>
+                            <div class="instagram-user-info">
+                                <span class="instagram-username">vinodhospitals</span>
+                                <span class="instagram-location">Vinod Hospital ICU</span>
+                            </div>
+                            <a href="https://www.instagram.com/vinodhospitals/?hl=en" target="_blank" class="instagram-link-icon" aria-label="View on Instagram"><i data-lucide="instagram"></i></a>
+                        </div>
+                        <div class="instagram-img-container">
+                            <img src="https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?auto=format&fit=crop&q=80&w=600" alt="Advanced ICU and Emergency Trauma Care at Vinod Hospital">
+                            <div class="instagram-card-overlay">
+                                <span class="instagram-stat"><i data-lucide="heart"></i> 256</span>
+                                <span class="instagram-stat"><i data-lucide="message-circle"></i> 24</span>
+                            </div>
+                        </div>
+                        <div class="instagram-card-content">
+                            <p class="instagram-caption">
+                                <strong>vinodhospitals</strong> 🚑 When seconds count, count on us. Our advanced ICU, critical care units, and emergency trauma teams are active 24/7. #CriticalCare #EmergencyMedicine #ICU #AlwaysReady
+                            </p>
+                            <span class="instagram-date">5 days ago</span>
+                        </div>
+                    </div>
+                    
+                    <!-- Post 3 -->
+                    <div class="instagram-card glass">
+                        <div class="instagram-header">
+                            <div class="instagram-avatar">V</div>
+                            <div class="instagram-user-info">
+                                <span class="instagram-username">vinodhospitals</span>
+                                <span class="instagram-location">Sangareddy, India</span>
+                            </div>
+                            <a href="https://www.instagram.com/vinodhospitals/?hl=en" target="_blank" class="instagram-link-icon" aria-label="View on Instagram"><i data-lucide="instagram"></i></a>
+                        </div>
+                        <div class="instagram-img-container">
+                            <img src="https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&q=80&w=600" alt="Dr. Vinod Kumar Kandala MD consulting patients">
+                            <div class="instagram-card-overlay">
+                                <span class="instagram-stat"><i data-lucide="heart"></i> 384</span>
+                                <span class="instagram-stat"><i data-lucide="message-circle"></i> 42</span>
+                            </div>
+                        </div>
+                        <div class="instagram-card-content">
+                            <p class="instagram-caption">
+                                <strong>vinodhospitals</strong> 🏥 Guided by clinical integrity. Consult Dr. Vinod Kumar Kandala (MD, General Medicine - Gold Medalist) for comprehensive internal medicine and chronic illness consultations. #GoldMedalist #GeneralMedicine #Sangareddy
+                            </p>
+                            <span class="instagram-date">1 week ago</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="instagram-footer-btn" style="text-align: center; margin-top: 3.5rem;">
+                    <a href="https://www.instagram.com/vinodhospitals/?hl=en" target="_blank" class="btn btn-secondary" style="border-radius: 50px; padding: 0.85rem 2rem; gap: 0.5rem; display: inline-flex; align-items: center;">
+                        <i data-lucide="instagram"></i> View All 158 Posts on Instagram
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section C: Medical Services Matrix -->
+        <section id="services" class="section-padding" style="padding: 80px 0;">
+            <div class="container">
+                <div class="section-header" style="text-align: center; margin-bottom: 50px;">
+                    <span class="badge">Our Specialties</span>
+                    <h2 class="text-brand-blue" style="font-size: 32px; font-weight: 700; margin-bottom: 15px;">Our Specialities & Facilities</h2>
+                    <p style="color: var(--text-secondary);">Providing comprehensive medical solutions with high standards of clinical excellence in Sangareddy.</p>
+                </div>
+                
+                <div class="dept-grid">
+                    <!-- Emergency & ICU -->
+                    <div class="dept-card glass" style="border-top: 4px solid var(--hospital-orange); background: var(--bg-secondary);">
+                        <div class="dept-icon">
+                            <i data-lucide="ambulance"></i>
+                        </div>
+                        <h3 class="text-brand-blue" style="margin: 0 0 10px 0; font-size: 20px;">24×7 Emergency & ICU</h3>
+                        <p style="color: var(--text-secondary); font-size: 14px; margin: 0; line-height: 1.6;">Critical care support around the clock with modern monitoring equipment.</p>
+                    </div>
+                    
+                    <!-- Women & Child Care -->
+                    <div class="dept-card glass" style="border-top: 4px solid var(--hospital-blue); background: var(--bg-secondary);">
+                        <div class="dept-icon">
+                            <i data-lucide="baby"></i>
+                        </div>
+                        <h3 class="text-brand-blue" style="margin: 0 0 10px 0; font-size: 20px;">Women & Child Care</h3>
+                        <p style="color: var(--text-secondary); font-size: 14px; margin: 0; line-height: 1.6;">Advanced obstetrics, gynecology, and safe pediatric care solutions.</p>
+                    </div>
+                    
+                    <!-- General Medicine -->
+                    <div class="dept-card glass" style="border-top: 4px solid var(--hospital-blue); background: var(--bg-secondary);">
+                        <div class="dept-icon">
+                            <i data-lucide="stethoscope"></i>
+                        </div>
+                        <h3 class="text-brand-blue" style="margin: 0 0 10px 0; font-size: 20px;">General Medicine</h3>
+                        <p style="color: var(--text-secondary); font-size: 14px; margin: 0; line-height: 1.6;">Expert internal medicine and chronic illness management by our Gold Medalist lead.</p>
+                    </div>
+                    
+                    <!-- Orthopedics -->
+                    <div class="dept-card glass" style="border-top: 4px solid var(--hospital-blue); background: var(--bg-secondary);">
+                        <div class="dept-icon">
+                            <i data-lucide="activity"></i>
+                        </div>
+                        <h3 class="text-brand-blue" style="margin: 0 0 10px 0; font-size: 20px;">Orthopedics</h3>
+                        <p style="color: var(--text-secondary); font-size: 14px; margin: 0; line-height: 1.6;">Comprehensive bone, joint care, and physical trauma management.</p>
+                    </div>
+                    
+                    <!-- Dental, Eye & Diagnostics -->
+                    <div class="dept-card glass" style="border-top: 4px solid var(--hospital-blue); background: var(--bg-secondary);">
+                        <div class="dept-icon">
+                            <i data-lucide="microscope"></i>
+                        </div>
+                        <h3 class="text-brand-blue" style="margin: 0 0 10px 0; font-size: 20px;">Dental, Eye & Diagnostics</h3>
+                        <p style="color: var(--text-secondary); font-size: 14px; margin: 0; line-height: 1.6;">Routine eye cleanings, standard dentistry, and precise full labs on-site.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Facilities Section -->
+        <section id="facilities" class="bg-light-gray section-padding" style="background-color: var(--bg-light); padding: 80px 0;">
+            <div class="container">
+                <div class="section-header" style="text-align: center; margin-bottom: 50px;">
+                    <span class="badge">Modern Infrastructure</span>
+                    <h2>State-of-the-Art Facilities</h2>
+                    <p style="color: var(--text-secondary);">Equipped with high-performance instrumentation, spacious emergency wards, and advanced clinical infrastructure.</p>
+                </div>
+                
+                <div class="facilities-grid">
+                    <!-- Facility 1 -->
+                    <div class="facility-card">
+                        <div class="facility-img" style="background-image: url('https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?auto=format&fit=crop&q=80&w=600');"></div>
+                        <div class="facility-overlay">
+                            <h3>Advanced ICU Wards</h3>
+                            <p>Continuous monitoring equipment and round-the-clock intensive critical staff.</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Facility 2 -->
+                    <div class="facility-card">
+                        <div class="facility-img" style="background-image: url('https://images.unsplash.com/photo-1516549655169-df83a0774514?auto=format&fit=crop&q=80&w=600');"></div>
+                        <div class="facility-overlay">
+                            <h3>Modern Surgical Suites</h3>
+                            <p>Sterilized surgical units for general surgeries, orthopedic corrections, and deliveries.</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Facility 3 -->
+                    <div class="facility-card">
+                        <div class="facility-img" style="background-image: url('https://images.unsplash.com/photo-1579154204601-01588f351167?auto=format&fit=crop&q=80&w=600');"></div>
+                        <div class="facility-overlay">
+                            <h3>Full Diagnostic Laboratory</h3>
+                            <p>Quick, automated diagnostic screens, biochemistry panels, pathology, and hematology.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Interactive Appointment Booking Form -->
+        <section id="booking" class="booking section-padding" style="padding: 80px 0;">
+            <div class="container" style="display: grid; grid-template-columns: 0.95fr 1.05fr; gap: 50px; align-items: center;">
+                <div class="booking-text">
+                    <span class="badge">Direct Booking</span>
+                    <h2>Schedule An Appointment</h2>
+                    <p style="color: var(--text-secondary); margin-bottom: 2rem;">Choose your department, select a suitable date, and submit. Our support team will instantly call back to confirm your checkup slot.</p>
+                    
+                    <ul class="features-list">
+                        <li class="feature-item" style="display: flex; gap: 1rem; margin-bottom: 1.5rem;">
+                            <div class="feature-icon-wrapper" style="width: 44px; height: 44px; border-radius: 50%; background: var(--primary-glow); display: flex; align-items: center; justify-content: center; color: var(--primary); flex-shrink: 0;">
+                                <i data-lucide="clock"></i>
+                            </div>
+                            <div>
+                                <h4 style="margin-bottom: 0.25rem;">Instant Confirmation</h4>
+                                <p style="color: var(--text-secondary); font-size: 0.9rem; margin: 0;">We contact you within 15 minutes to confirm details.</p>
+                            </div>
+                        </li>
+                        <li class="feature-item" style="display: flex; gap: 1rem;">
+                            <div class="feature-icon-wrapper" style="width: 44px; height: 44px; border-radius: 50%; background: var(--primary-glow); display: flex; align-items: center; justify-content: center; color: var(--primary); flex-shrink: 0;">
+                                <i data-lucide="user-check"></i>
+                            </div>
+                            <div>
+                                <h4 style="margin-bottom: 0.25rem;">Expert Practitioners</h4>
+                                <p style="color: var(--text-secondary); font-size: 0.9rem; margin: 0;">Consult directly with Dr. Vinod Kumar Kandala.</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                
+                <!-- Interactive Booking Form Card -->
+                <div class="booking-card glass booking-form-wrapper" style="padding: 3rem; background: var(--bg-secondary);">
+                    <!-- Success Overlay -->
+                    <div id="form-success-overlay" class="form-success-overlay" style="background: var(--bg-primary);">
+                        <div class="success-icon-container">
+                            <i data-lucide="check"></i>
+                        </div>
+                        <h3>Request Registered!</h3>
+                        <p>We will call you shortly to finalize your appointment slot.</p>
+                        
+                        <div style="text-align: left; background: var(--bg-secondary); padding: 1.5rem; border-radius: var(--border-radius-sm); margin-bottom: 2rem; width: 100%;">
+                            <div style="font-size: 0.9rem; margin-bottom: 0.5rem;"><strong style="font-family: 'Outfit';">Department:</strong> <span id="summary-doc"></span></div>
+                            <div style="font-size: 0.9rem; margin-bottom: 0.5rem;"><strong style="font-family: 'Outfit';">Preferred Date:</strong> <span id="summary-date"></span></div>
+                            <div style="font-size: 0.9rem;"><strong style="font-family: 'Outfit';">Contact Phone:</strong> <span id="summary-phone"></span></div>
+                        </div>
+
+                        <button id="close-success-btn" class="btn btn-primary" style="width: 100%; background: var(--hospital-orange);">New Request</button>
+                    </div>
+
+                    <h3>Book Your Visit</h3>
+                    <form id="appointment-form" novalidate>
+                        <div class="form-grid">
+                            <!-- Full Name -->
+                            <div class="form-group full-width">
+                                <label for="booking-name">Full Name</label>
+                                <input type="text" id="booking-name" class="form-control" placeholder="John Doe">
+                                <span class="error-message">Please enter your full name.</span>
+                            </div>
+                            
+                            <!-- Email Address -->
+                            <div class="form-group">
+                                <label for="booking-email">Email Address</label>
+                                <input type="email" id="booking-email" class="form-control" placeholder="john@example.com">
+                                <span class="error-message">Please enter a valid email.</span>
+                            </div>
+                            
+                            <!-- Phone Number -->
+                            <div class="form-group">
+                                <label for="booking-phone">Phone Number</label>
+                                <input type="tel" id="booking-phone" class="form-control" placeholder="+91 98765 43210">
+                                <span class="error-message">Please enter a valid phone number.</span>
+                            </div>
+                            
+                            <!-- Specialty / Department -->
+                            <div class="form-group">
+                                <label for="booking-dept">Department</label>
+                                <select id="booking-dept" class="form-control">
+                                    <option value="" selected disabled>Select Specialty</option>
+                                    <option value="emergency">Emergency & ICU</option>
+                                    <option value="women">Women & Child Care</option>
+                                    <option value="medicine">General Medicine</option>
+                                    <option value="orthopedics">Orthopedics</option>
+                                    <option value="dental">Dental, Eye & Diagnostics</option>
+                                </select>
+                                <span class="error-message">Please choose a department.</span>
+                            </div>
+                            
+                            <!-- Select Doctor -->
+                            <div class="form-group">
+                                <label for="booking-doctor">Select Doctor</label>
+                                <select id="booking-doctor" class="form-control">
+                                    <option value="" selected disabled>Choose Doctor</option>
+                                    <option value="kandala">Dr. Vinod Kumar Kandala</option>
+                                </select>
+                                <span class="error-message">Please choose a doctor.</span>
+                            </div>
+                            
+                            <!-- Preferred Date -->
+                            <div class="form-group full-width">
+                                <label for="booking-date">Preferred Date</label>
+                                <input type="date" id="booking-date" class="form-control">
+                                <span class="error-message">Please select a calendar date.</span>
+                            </div>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary" style="width: 100%; background: var(--hospital-orange); color: #FFFFFF; font-weight: bold; border-radius: 6px; border: none; cursor: pointer; margin-top: 1rem;">
+                            <span>Submit Booking Request</span>
+                            <i data-lucide="check"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section D: Patient Reviews (Social Proof) -->
+        <section id="testimonials" class="testimonials section-padding" style="background: var(--bg-secondary); padding: 80px 0;">
+            <div class="container" style="text-align: center;">
+                <span style="color: var(--hospital-blue); font-weight: 600; text-transform: uppercase; letter-spacing: 1px; display: block; margin-bottom: 10px;">Patient Experiences</span>
+                <h2 style="font-size: 32px; margin: 5px 0 15px; font-weight: 700;">Verified 5.0 Star Patient Feedback</h2>
+                <div style="color: #FFB000; font-size: 24px; margin-bottom: 40px;">
+                    ★★★★★ 
+                    <span style="color: var(--text-primary); font-size: 16px; font-weight: normal; margin-left: 8px;">(Based on 48 Google Reviews)</span>
+                </div>
+                
+                <div class="dept-grid" style="text-align: left;">
+                    <!-- Review 1 -->
+                    <div class="dept-card glass" style="padding: 2.5rem 2rem; cursor: default; background: var(--bg-primary);">
+                        <div style="color: #FFB000; font-size: 18px; margin-bottom: 15px;">★★★★★</div>
+                        <p style="font-style: italic; color: var(--text-primary); font-size: 1.05rem; line-height: 1.7; margin-bottom: 1.5rem; flex-grow: 1;">
+                            "From my parents to my kids Vinod sir has been our family doctor for years"
+                        </p>
+                        <strong style="color: var(--hospital-blue); font-family: 'Outfit'; font-size: 0.95rem;">- Verified Patient</strong>
+                    </div>
+                    
+                    <!-- Review 2 -->
+                    <div class="dept-card glass" style="padding: 2.5rem 2rem; cursor: default; background: var(--bg-primary);">
+                        <div style="color: #FFB000; font-size: 18px; margin-bottom: 15px;">★★★★★</div>
+                        <p style="font-style: italic; color: var(--text-primary); font-size: 1.05rem; line-height: 1.7; margin-bottom: 1.5rem; flex-grow: 1;">
+                            "Happy with entire hospital environment and treatment as well."
+                        </p>
+                        <strong style="color: var(--hospital-blue); font-family: 'Outfit'; font-size: 0.95rem;">- Verified Patient</strong>
+                    </div>
+                    
+                    <!-- Review 3 -->
+                    <div class="dept-card glass" style="padding: 2.5rem 2rem; cursor: default; background: var(--bg-primary);">
+                        <div style="color: #FFB000; font-size: 18px; margin-bottom: 15px;">★★★★★</div>
+                        <p style="font-style: italic; color: var(--text-primary); font-size: 1.05rem; line-height: 1.7; margin-bottom: 1.5rem; flex-grow: 1;">
+                            "I am so grateful to doctor."
+                        </p>
+                        <strong style="color: var(--hospital-blue); font-family: 'Outfit'; font-size: 0.95rem;">- Verified Patient</strong>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQs Section -->
+        <section id="faq" class="section-padding" style="padding: 80px 0;">
+            <div class="container">
+                <div class="section-header" style="text-align: center; margin-bottom: 50px;">
+                    <span class="badge">Patient Support</span>
+                    <h2>Frequently Asked Questions</h2>
+                    <p style="color: var(--text-secondary);">Get immediate answers about operational guidelines, insurance partners, and consulting admissions.</p>
+                </div>
+                
+                <div class="faq-accordion">
+                    <!-- FAQ 1 -->
+                    <div class="faq-item">
+                        <div class="faq-header">
+                            <span>What are the timings for outpatient consultation (OPD)?</span>
+                            <div class="faq-icon"><i data-lucide="chevron-down"></i></div>
+                        </div>
+                        <div class="faq-content">
+                            <p>Outpatient services under Dr. Vinod Kumar Kandala are active daily. General hours are from 10:00 AM to 2:00 PM and 5:00 PM to 8:00 PM. Please register online or call back ahead to schedule.</p>
+                        </div>
+                    </div>
+                    
+                    <!-- FAQ 2 -->
+                    <div class="faq-item">
+                        <div class="faq-header">
+                            <span>Is the Emergency and ICU section open 24 hours?</span>
+                            <div class="faq-icon"><i data-lucide="chevron-down"></i></div>
+                        </div>
+                        <div class="faq-content">
+                            <p>Yes, Vinod Multi Speciality Hospital provides 24×7 active emergency and critical ICU admissions. Our intensive care monitors, ambulance response, and trauma surgeons are ready 7 days a week.</p>
+                        </div>
+                    </div>
+                    
+                    <!-- FAQ 3 -->
+                    <div class="faq-item">
+                        <div class="faq-header">
+                            <span>Do you support medical insurance networks?</span>
+                            <div class="faq-icon"><i data-lucide="chevron-down"></i></div>
+                        </div>
+                        <div class="faq-content">
+                            <p>Yes, we support major corporate health insurances, third-party administrators (TPAs), and government-approved medical insurance schemes. Our front desk provides assistance with the paperwork.</p>
+                        </div>
+                    </div>
+                    
+                    <!-- FAQ 4 -->
+                    <div class="faq-item">
+                        <div class="faq-header">
+                            <span>Where is the hospital located in Sangareddy?</span>
+                            <div class="faq-icon"><i data-lucide="chevron-down"></i></div>
+                        </div>
+                        <div class="faq-content">
+                            <p>We are situated at Haritha Nagar, on the Sangareddy Bypass Road, directly opposite to the Mahila Pranganam. There is parking access on-site.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- ==========================================
+         Section E: Footer & Contact
+         ========================================== -->
+    <footer id="contact" class="bg-brand-blue" style="color: #FFFFFF; padding: 60px 0 30px 0; background-color: var(--hospital-blue); position: relative; z-index: 2;">
+        <div class="container" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 40px;">
+            <div>
+                <h3 style="font-size: 22px; margin-bottom: 15px; font-family: 'Outfit';">Vinod Multi Speciality Hospital</h3>
+                <p style="opacity: 0.8; font-size: 14px; line-height: 1.6; color: #f8fafc;">Providing trusted healthcare with expert doctors, 24/7 support, and modern critical care units in Sangareddi.</p>
+            </div>
+            <div>
+                <h4 style="font-size: 18px; margin-bottom: 15px; border-bottom: 2px solid var(--hospital-orange); display: inline-block; padding-bottom: 5px; font-family: 'Outfit';">Hospital Address</h4>
+                <p style="opacity: 0.9; font-size: 15px; line-height: 1.6; color: #f8fafc;">
+                    Haritha Nagar, Sangareddy Bypass Rd,<br>
+                    opp. to Mahila Pranganam,<br>
+                    Sangareddy, Telangana 502001
+                </p>
+            </div>
+            <div>
+                <h4 style="font-size: 18px; margin-bottom: 15px; border-bottom: 2px solid var(--hospital-orange); display: inline-block; padding-bottom: 5px; font-family: 'Outfit';">Operational Hours</h4>
+                <p style="font-size: 22px; font-weight: bold; margin-bottom: 5px; color: #FFFFFF; font-family: 'Outfit';">Open 24 Hours</p>
+                <p style="opacity: 0.7; font-size: 13px; color: #f8fafc;">Emergency, Trauma, and ICU Admissions are active 7 days a week.</p>
+            </div>
+        </div>
+        
+        <div class="container" style="text-align: center; margin-top: 40px; padding-top: 20px; border-top: 1px solid rgba(255,255,255,0.1); font-size: 13px; opacity: 0.7; color: #f8fafc;">
+            &copy; 2026 Vinod Multi Speciality Hospital. All Rights Reserved. Designed with premium medical excellence.
+        </div>
+    </footer>
+
+    <!-- ==========================================
+         JAVASCRIPT EXTERNAL PACKAGES (CDNs)
+         ========================================== -->
+    <!-- Lenis Smooth Scroll -->
+    <script src="https://cdn.jsdelivr.net/npm/@studio-freight/lenis@1.0.42/dist/lenis.min.js"></script>
+    
+    <!-- GSAP Core & ScrollTrigger -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script>
+        // Init Lucide Icons dynamically
+        lucide.createIcons();
+    </script>
+    
+    <!-- Local Animation & Logic Files -->
+    <script src="particles.js"></script>
+    <script src="app.js"></script>
+
+</body>
+</html>
